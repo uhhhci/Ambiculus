@@ -6,3 +6,4 @@ The Unity project transmits the pixel colors using a virtual serial port to an A
 The Arduino Nano is connected to LED Strips with an integrated WS2812B Controller. The sketch uses the Adafruit Neopixel library (https://github.com/adafruit/Adafruit_NeoPixel) .
 
 Finally managed to find some time to clean up the code and used the opportunity to update it and make it faster. Now using async gpu readbacks.
+There is an example Scene included which works without an HMD.
