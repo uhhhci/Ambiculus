@@ -4,9 +4,9 @@
 
 As promised years ago: The Ambiculus source code for the paper: https://dl.acm.org/citation.cfm?id=2927939
 
-![](Doc/ambiculusWODiff.jpg)
+![](Doc/AmbiculusWODiff.jpg)
 
-![](Doc/ambiculusWDiff.jpg)
+![](Doc/AmbiculusWDiff.jpg)
 
 Ambiculus is a peripheral, low-resolution display extension for HMDs.
 The Unity project transmits the pixel colors using a virtual serial port to an Arduino Nano.
