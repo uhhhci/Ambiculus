@@ -118,7 +118,7 @@ public class Ambiculus : MonoBehaviour
                 if (_requests.Count < 8)
                 {
                     _requests.Enqueue(AsyncGPUReadback.Request(ambiculusImageEffect.left));
-                    cou = StartCoroutine(GetPix());
+                    StartCoroutine(GetPix());
                 }
                 else
                     Debug.Log("Too many requests.");
@@ -153,7 +153,6 @@ public class Ambiculus : MonoBehaviour
     /// <returns></returns>
 	IEnumerator GetPix()
     {
-        coroutineIsRunning = true;
         while (_requests.Count > 0)
         {
             var req = _requests.Peek();
@@ -175,7 +174,6 @@ public class Ambiculus : MonoBehaviour
                 yield return null;
             }
         }
-        coroutineIsRunning = false;
     }
 
     private void SetStripColor(byte red, byte green, byte blue)
